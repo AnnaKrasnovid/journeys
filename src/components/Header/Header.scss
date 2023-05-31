@@ -1,0 +1,47 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.header {
+    &__info {
+        display: flex;              
+    }
+
+    &__item {
+        display: flex;
+        margin-right: 50px;
+        align-items: center;    
+    }
+
+    &__icon {
+       width: 35px;
+       height: 35px;
+       margin: 10px;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+       @include font-segoe-semibold(18px, 24px);
+       color: #2A3950;
+       margin: 0;
+    }
+
+    &__subtitle {
+        @include font-segoe-regular(12px, 16px);
+        color: #2A3950;
+    }
+
+    box-shadow: 0px 10px 44px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 14px $base-side-padding;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    z-index: 55;
+}
+
+

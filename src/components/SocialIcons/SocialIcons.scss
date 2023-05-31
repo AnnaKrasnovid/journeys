@@ -1,0 +1,26 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+
+.social-icon {
+    max-width: 315px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 0;
+    margin: 0;
+
+    &__point {
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__icon {
+        width: 35px;
+        height: 35px;
+    }
+}

@@ -1,0 +1,89 @@
+$base-side-padding: 7.8%;
+
+@mixin font-segoe-regular($size, $line-height){
+    font: {
+        family: 'Segoe UI';
+        size: $size;
+        weight: 400;
+    }
+    line-height: $line-height;
+    margin: 0;
+}
+
+@mixin font-segoe-semibold($size, $line-height){
+    font: {
+        family: 'Segoe UI';
+        size: $size;
+        weight: 600;
+    }
+    line-height: $line-height;
+    margin: 0;
+}
+
+@mixin font-segoe-bold($size, $line-height){
+    font: {
+        family: 'Segoe UI';
+        size: $size;
+        weight: 700;
+    }
+    line-height: $line-height;
+    margin: 0;
+}
+
+@mixin font-title{
+    font: {
+        family: 'DM Serif Display';
+        size: 62px;
+        weight: 400;
+    }
+    line-height: 112%;
+    color: #FFFFFF;
+    margin: 0;
+    text-shadow: 0px 8px 14px rgba(0, 0, 0, 0.25);
+}
+
+@mixin font-subtitle{
+    font: {
+        family: 'Segoe UI';
+        size: 20px;
+        weight: 400;
+    }
+    line-height: 27px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    margin: 15px 0 50px;
+}
+
+@mixin button-green($size, $line-height) {
+    font: {
+        family: 'Segoe UI';
+        size: $size;
+        weight: 700;
+    }
+    line-height: $line-height;
+    color: #2A3950;;
+    background-color: #00E0C7;
+    border-radius: 10px;
+    border: none;
+}
+ 
+@mixin button-dark($size, $line-height, $border-radius) {
+    font: {
+        family: 'Segoe UI';
+        size: $size;
+        weight: 700;
+    }
+    line-height: $line-height;
+    color: #FFFFFF;
+    background-color: #2A3950;
+    border-radius: $border-radius;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 2px;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
