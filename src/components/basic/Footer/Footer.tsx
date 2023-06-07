@@ -1,5 +1,5 @@
-import Information from '../Information/Information';
-import SocialIcons from '../SocialIcons/SocialIcons';
+import Information from '../../project/Information/Information';
+import SocialIcons from '../../project/SocialIcons/SocialIcons';
 
 import './Footer.scss';
 

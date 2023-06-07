@@ -1,9 +1,11 @@
+import SectionLead from "../components/sections/SectionLead/SectionLead";
+
 function Main() {
    
     return (
-        <div >
-          className='grid-2'
-        </div >
+        < >
+          <SectionLead />
+        </ >
     )
 }
 

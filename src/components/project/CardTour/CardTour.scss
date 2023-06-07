@@ -1,0 +1,117 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.card-tour {
+    &__container {}
+
+    &__item {
+        width: 450px;
+        height: 405px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        position: relative;
+        box-sizing: border-box;
+        border: 2px solid #FFFFFF;
+    }
+
+    &__place {
+        width: 100%;
+        height: 100%;
+        //background-image: url(../image/tour-packages-1.jpg);
+        //background-repeat: no-repeat;
+        //background-size: cover;
+        object-fit: cover;
+        position: absolute;
+        border-radius: 20px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &__title {
+        @include font-segoe-bold(30px, 125%);
+        margin-top: 20px;
+        margin-bottom: 10px;
+        max-width: 340px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__icon {
+        background-image: url(../../../assets/images/day-night.svg);
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+    }
+
+    &__text {
+        @include font-segoe-semibold(22px, 125%);
+        margin-left: 13px;
+    }
+
+    max-width: 450px;
+    width: 100%;  
+    list-style: none;
+}
+
+.star {
+    &__icon {
+        background-image: url(../../../assets/images/Star.svg);
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+    }
+
+    &__estimation {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 125%;
+        text-align: center;
+        margin: 0;
+    }
+
+    background: rgba(42, 57, 80, 0.3);
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 7px 24px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    min-width: 82px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    box-sizing: border-box;
+}
+
+.cost {
+    background: rgba(42, 57, 80, 0.3);
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 7px 24px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 125%;
+    text-align: center;
+    min-width: 120px;
+    height: 50px;    
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

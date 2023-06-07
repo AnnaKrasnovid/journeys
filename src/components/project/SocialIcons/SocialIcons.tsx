@@ -1,10 +1,10 @@
-import InIcon from '../../assets/images/in.svg';
-import InstagramIcon from '../../assets/images/instagram.svg';
-import YoutubeIcon from '../../assets/images/youtube.svg';
-import TwitterIcon from '../../assets/images/twitter.svg';
-import FacebookIcon from '../../assets/images/facebook.svg';
+import InIcon from '../../../assets/images/in.svg';
+import InstagramIcon from '../../../assets/images/instagram.svg';
+import YoutubeIcon from '../../../assets/images/youtube.svg';
+import TwitterIcon from '../../../assets/images/twitter.svg';
+import FacebookIcon from '../../../assets/images/facebook.svg';
 
-import { links } from '../../assets/appData/links';
+import { links } from '../../../assets/appData/links';
 
 import './SocialIcons.scss';
 

@@ -1,0 +1,126 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.card-destination {
+    // pointer-events: none;
+    // user-select: none;
+    display: grid;
+    grid-template-columns: 484px 340px
+    /*fit-content(376px)*/
+    /*minmax(300px, 484px) minmax(200px, 376px)*/
+    ; //
+    column-gap: 50px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 24px 100px rgba(36, 55, 91, 0.15);
+    border-radius: 50px;
+    padding: 30px 30px 30px 50px;
+    box-sizing: border-box;
+    // margin-right: 5%;
+    grid-template-areas: "title image"
+    "text image"
+    "info image"
+    "buttons image";
+    list-style: none;
+    
+    &__container-title {
+        grid-area: title;
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        column-gap: 21px;
+    }
+
+    &__title {
+        @include font-segoe-semibold(40px, 150%);
+        color: #222222;
+        user-select: none;
+    }
+
+    &__text {
+        @include font-segoe-semibold(18px, 167%);
+        color: #636668;
+        grid-area: text;
+        user-select: none;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        grid-area: info;
+    }
+
+    &__author {
+        @include font-segoe-semibold(24px, 125%);
+        color: #636668;
+        flex-basis: 210px;
+    }
+
+    &__container-comment {}
+
+    &__comment {
+        background-image: url(../../../assets/images/icon-comment.svg);
+        padding: 0;
+        border: none;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 28px;
+        width: 28px;
+        background-color: white;
+    }
+
+    &__count-comment {
+        @include font-segoe-semibold(24px, 30px);
+        color: #222222;
+    }
+
+    &__container-like {}
+
+    &__like {}
+
+    &__count-like {
+        @include font-segoe-semibold(24px, 30px);
+        color: #222222;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        grid-area: buttons;
+        align-items: flex-end;
+    }
+
+    &__picture {
+        border-radius: 40px;
+        //max-width: 376px;
+        width: 100%;
+        height: 540px;
+        object-fit: cover;
+        grid-area: image;
+        user-select: none;
+        @media screen and (max-width: 1150px) {
+            height: 250px;
+        }
+    }
+
+    
+
+    @media screen and (max-width: 1150px) {
+        grid-template-columns: minmax(280px, max-content);
+        grid-template-areas:
+            "title"
+            "image"
+            "text"
+            "info"
+            "buttons";
+        padding-left: 30px;
+    }
+
+    @media screen and (max-width: 400px) {
+        //margin-right: 0;
+    }
+}
+
+.button-card-destination {
+    min-width: 220px;
+    // pointer-events: none;
+
+}

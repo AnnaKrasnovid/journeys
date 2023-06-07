@@ -1,0 +1,16 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.heading {
+    max-width: 856px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    &__title {
+        @include font-title;
+    }
+    &__subtitle {
+        @include font-subtitle;
+    }
+}

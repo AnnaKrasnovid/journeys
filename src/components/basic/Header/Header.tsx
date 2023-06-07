@@ -1,6 +1,8 @@
-import LogoIcon from '../../assets/images/logo.svg';
-import BusinessIcon from '../../assets/images/ic_business.svg';
-import TripIcon from '../../assets/images/ic_trip.svg';
+import Button from '../../../ui/Button/Button';
+
+import LogoIcon from '../../../assets/images/logo.svg';
+import BusinessIcon from '../../../assets/images/ic_business.svg';
+import TripIcon from '../../../assets/images/ic_trip.svg';
 
 import './Header.scss';
 
@@ -23,7 +25,7 @@ function Header() {
                         <span className="header__subtitle">Manage your bookings</span>
                     </div>
                 </div>
-                <button className="button button_type_header">SignUp</button>
+                <Button color='dark' size='small' text='SignUp' borderRadius='middle' border={true}/>              
             </div>
         </header>
     )

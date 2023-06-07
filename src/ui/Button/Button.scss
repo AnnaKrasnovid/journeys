@@ -1,0 +1,246 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.button {
+    border: none;
+    font-family: 'Segoe UI';
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    white-space: nowrap;
+
+    &_color {
+        &_dark {
+            color: #FFFFFF;
+            background-color: #2A3950;
+        }
+
+        &_green {
+            color: #2A3950;
+            background-color: #00E0C7;
+        }
+    }
+
+    &_size {
+        &_xsmall {
+            min-height: 30px;
+        }
+
+        &_small {
+            min-height: 50px;
+            font-size: 20px;
+            line-height: 27px;
+            min-width: 151px;
+        }
+
+        &_middle {
+            min-height: 60px;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 29px;
+        }
+
+        &_large {
+            min-height: 65px;
+            min-width: 230px;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 125%;
+        }
+
+        &_xlarge {
+            min-height: 68px;
+        }
+
+        &_xxlarge {
+            min-height: 76px;
+        }
+    }
+
+    &_border-radius {
+        &_none {
+            border-radius: none;
+        }
+
+        &_small {
+            border-radius: 5px;
+        }
+
+        &_middle {
+            border-radius: 8px;
+        }
+
+        &_large {
+            border-radius: 10px;
+        }
+
+        &_xlarge {
+            border-radius: 15px;
+        }
+    }
+
+    &_invert {}
+
+    &_border {
+        border: 2px solid #FFFFFF;
+    }
+
+    &_shadow {
+        &_green {
+            box-shadow: 3px 5px 10px rgba(0, 224, 199, 0.25);
+        }
+
+        &_dark {
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    &_type_header {
+        @include button-dark (20px, 27px, 8px);
+        width: 158px;
+        min-height: 50px;
+    }
+
+    // &_type_lead {
+    //     @include button-dark (22px, 28px, 10px);
+    //     width: 230px;
+    //     min-height: 64px;
+    //     margin-bottom: 160px;
+
+    //     @media screen and (max-width: 1700px) {
+    //         margin-bottom: 50px;
+    //     }
+    // }
+
+    &_type_form {
+        @include button-green(22px, 125%);
+        width: 220px;
+        height: 68px;
+
+        @media screen and (max-width: 1150px) {
+            margin-top: 20px;
+        }
+    }
+
+    &_type_intro {
+        @include button-green(22px, 125%);
+        width: 215px;
+        min-height: 68px;
+        border: 2px solid #FFFFFF;
+    }
+
+    &_type_card-booking {
+        @include font-segoe-regular(12px, 125%);
+        width: 89px;
+        min-height: 30px;
+        border: 1px solid #006270;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+    }
+
+    &_type_card-booking-green {
+        @include button-green(12px, 125%);
+        width: 89px;
+        min-height: 30px;
+    }
+
+    &_type_card-destinations {
+        @include button-green(22px, 29px);
+        width: 220px;
+        min-height: 60px;
+        border: 2px solid #FFFFFF;
+        box-shadow: 3px 5px 10px rgba(0, 224, 199, 0.25);
+    }
+
+    &_type_tour-packages {
+        @include button-green(22px, 125%);
+        width: 250px;
+        min-height: 65px;
+    }
+
+    &_type_card-tour {
+        @include button-green(20px, 125%);
+        width: 170px;
+        min-height: 50px;
+    }
+
+    &_type_to-share {
+        padding: 0;
+        border: 0;
+        background: rgba(0, 224, 199, 0.2);
+        border-radius: 50%;
+        width: 61px;
+        min-height: 61px;
+        background-image: url(../../assets//images/icon-to-share.svg);
+        background-size: 31px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 26px;
+    }
+
+    &_type_nav {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        box-sizing: border-box;
+        border: 1px solid #FFFFFF;
+        backdrop-filter: blur(1px);
+        background-color: #264257;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 10px 20px;
+    }
+
+    &_type_nav-left {
+         background-image: url(../../assets/images/back-next.svg);
+    }
+
+    &_type_nav-right {
+         background-image: url(../../assets/images/back-next.svg);
+        transform: rotate(180deg);
+    }
+
+    &_type_nav-active {
+        background-color: #00E0C7;
+        background-image: url(../../assets/images/back-active.svg);
+        transform: rotate(0deg);
+    }
+
+    &_type_popular-destinations {
+        width: 100px;
+        height: 100px;
+        background: #FFFFFF;
+        box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.15);
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        z-index: 2;
+        border: 0;
+    }
+
+    &_type_arrow-right {
+        background-image: url(../../assets/images/Arrow-right.svg);
+        right: -50px;
+    }
+
+    &_type_arrow-left {
+         background-image: url(../../assets/images/Arrow-left.svg);
+        left: -50px;
+    }
+
+    &_type_form-newsletter {
+        @include button-green(30px, 35px);
+        border-radius: 0;
+        width: 300px;
+        min-height: 76px;
+        border: 0;
+    }
+
+    // padding: 0;
+    // cursor: pointer;
+}

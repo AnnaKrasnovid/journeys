@@ -1,4 +1,4 @@
-import LogoIcon from '../../assets/images/logo.svg';
+import LogoIcon from '../../../assets/images/logo.svg';
 
 import './Information.scss';
 
@@ -57,7 +57,7 @@ function Information() {
                     <ul className="information__list">
                         {item.links.map((i: LinkInt, ind: number) => (
                             <li className="information__info" key={ind}>
-                                <a className="information__link" href={i.link}>{i.title}</a>
+                                <a className="information__link" href={i.link} target='_blank'>{i.title}</a>
                             </li>
                         ))}
                     </ul>
